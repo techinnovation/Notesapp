@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NotesApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="link_text">By signing in or registering, you agree to our <a href="http://www.skilli.org">Terms and Conditions</a></string>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_firstname">First Name</string>
+    <string name="prompt_lastname">Last Name</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_password_verify">Confirm Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="login_progress_signing_in">Signing in&#8230;</string>
+    <string name="error_invalid_username">This username address is invalid</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="title_activity_main">MainActivity</string>
+    
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>My Profile</item>
+       <!--  <item>My Discussions</item>-->
+        <item>Discover Courses</item>
+        <item>My Courses</item>
+        <!-- <item>Certifications/Institutions</item>
+        <item>Help</item>-->
+        <item>Settings</item>
+        <!-- <item>Demo Video</item>-->
+    </string-array>
+
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_profile</item>
+       <!--  <item>@drawable/ic_discussion</item>-->
+        <item>@drawable/ic_discover</item>
+        <item>@drawable/ic_mycourses</item>
+        <!-- <item>@drawable/ic_help</item>-->
+        <item>@drawable/ic_settings</item>
+        <item>@drawable/ic_logout</item>
+    </array>
+
+</resources>

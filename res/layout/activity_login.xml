@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_width="fill_parent"
+     android:screenOrientation="portrait" 
+    android:layout_height="fill_parent"
+    android:background="#f6f6f6" >
+
+
+
+    <!-- Login form -->
+        <LinearLayout
+            style="@style/LoginFormContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:background="#f6f6f6" >
+
+            <TextView
+                android:id="@+id/label_signin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="Sign in"
+                android:textColor="#6c6968"
+                android:textSize="22sp"
+                android:textStyle="italic" />
+
+            <LinearLayout
+                style="@+id/login_panel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fffdfd"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+                    android:hint="@string/prompt_username"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:background="@drawable/input_corner" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+                    android:hint="@string/prompt_password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:padding="10dp"
+                    android:background="@drawable/input_corner" >
+                </EditText>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/sign_in_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_corner2"
+                android:textColor="#fff"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:text="Sign in"
+                android:textSize="16sp" />
+            
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sign_in_button"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="@string/link_text"
+                android:textColor="#6c6968"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+    
+   </LinearLayout>
+        
+    <!-- Footer Start -->
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/starting_pages"
+        android:orientation="vertical" >
+    </LinearLayout>
+    <!-- Footer Ends -->
+    
+
+</RelativeLayout>

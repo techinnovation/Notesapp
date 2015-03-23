@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f6f6f6" >
+
+    <!-- Login form -->
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         >
+
+    <LinearLayout
+        style="@style/SignUpFormContainer"
+        android:background="#f6f6f6"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/label_signin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="NotesApp SignUp!"
+            android:textColor="#6c6964"
+            android:textSize="22sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            style="@+id/login_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fffdfd"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <EditText
+                android:id="@+id/firstname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/prompt_firstname"
+                android:maxLines="1"
+                android:background="@drawable/input_corner"
+                android:padding="10dp"
+                android:singleLine="true" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/lastname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/input_corner"
+                android:hint="@string/prompt_lastname"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:singleLine="true" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/input_corner"
+                android:hint="@string/prompt_email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:singleLine="true" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/input_corner"
+                android:hint="@string/prompt_username"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:singleLine="true" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/input_corner"
+                android:hint="@string/prompt_password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:singleLine="true" >
+            </EditText>
+            
+            <EditText
+                android:id="@+id/password_verify"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_corner"
+                android:hint="@string/prompt_password_verify"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:singleLine="true" >
+            </EditText>
+            
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sign_up_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_corner2"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:text="Sign up"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sign_in_button"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="@string/link_text"
+            android:textColor="#6c6968"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+    
+    </ScrollView>
+
+    <!-- Footer Start -->
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/starting_pages"
+        android:orientation="vertical" >
+    </LinearLayout>
+    <!-- Footer Ends -->
+
+</RelativeLayout>

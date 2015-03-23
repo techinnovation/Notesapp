@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3" >
+
+    <RelativeLayout
+        android:id="@+id/banner"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp" >
+
+        <!-- <ImageView
+            android:id="@+id/course_banner"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/course_banner" />-->
+
+        <LinearLayout
+            android:id="@+id/course_title_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/course_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Css for beginners"
+                android:textColor="#13646c"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/course_owner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="By Damilola"
+                android:textColor="#6f6f6f"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banner" >
+
+        <android.support.v4.view.PagerTabStrip
+            android:id="@+id/pager_tab_strip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="#21b1a6"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColor="#fff" />
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

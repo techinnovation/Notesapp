@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/slide_logo_width"
+        android:layout_height="@dimen/slide_logo_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/slide_logo_margin_bottom"
+        android:layout_marginTop="@dimen/slide_logo_margin_top"
+        android:src="@drawable/notesapp_logo" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/slideshow_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginLeft="@dimen/slideshow_pager_margin"
+        android:layout_marginRight="@dimen/slideshow_pager_margin" >
+    </android.support.v4.view.ViewPager>
+
+    
+
+    <RelativeLayout
+        android:id="@+id/actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/actions_margin_bottom" >
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_corner2"
+            android:paddingBottom="@dimen/btnstart_padding"
+            android:paddingLeft="@dimen/btnstart_padding_sides"
+            android:paddingRight="@dimen/btnstart_padding_sides"
+            android:paddingTop="@dimen/btnstart_padding"
+            android:text="Get Started"
+            android:textColor="#fff"
+            android:textSize="@dimen/textSize" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/toogle"
+        android:layout_width="@dimen/toogle_width"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/actions"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/toogle_margin_bottom"
+        android:src="@drawable/toogle1" />
+
+    
+    <!-- Footer Start -->
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/starting_pages_footer_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/starting_pages"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <!-- Footer Ends -->
+    
+</RelativeLayout>

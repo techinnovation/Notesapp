@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#fff"
+  android:orientation="vertical">    
+    
+    
+    <LinearLayout
+        android:id="@+id/border"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginLeft="@dimen/linear_layout_border"
+        android:layout_marginRight="@dimen/linear_layout_border"
+        android:layout_marginTop="@dimen/linear_layout_border"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/slide4"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/slide_height"
+            android:src="@drawable/slide4" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/slide1"
+            android:layout_marginTop="@dimen/slide_text_margin_top"
+            android:gravity="center_horizontal"
+            android:text="Learning can be away from the classroom "
+            android:textColor="#6c6968"
+            android:textSize="@dimen/slide_text_size"
+            android:textStyle="italic" />
+    </LinearLayout>
+    
+    
+</LinearLayout>
