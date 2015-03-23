@@ -29,7 +29,7 @@ public class NotesContents extends Activity {
 		web.clearHistory();
 		web.getSettings().setJavaScriptEnabled(true);
 		web.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
-		web.loadUrl("http://watermark.notesapp.org/Note/NoteWebView?noteId="+note_id);//( "text/html", null);
+		web.loadUrl("http://notesapp.org/Note/NoteWebView?noteId="+note_id);//( "text/html", null);
 	}
 
 	@Override
