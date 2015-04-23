@@ -8,3 +8,7 @@ The student can download the notes or read those notes online.
 test username: flbolamide@yahoo.com
 test password: computechnic
 
+you can also visit notesapp.org to create an account.
+
+Thanks
+
